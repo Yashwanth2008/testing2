@@ -1,4 +1,4 @@
-version: 1.0
+version: 1
 jobs:
   hello:
     steps:
@@ -9,9 +9,29 @@ jobs:
   hello-world:
     steps:
       - echo "Hello World!"
+  One:
+    steps:
+      - catalyst deploy
 stages:
   - name: build
     jobs:
       - - hello
         - world
       - hello-world
+  - name: One
+    jobs:
+      - hello
+      - world
+      - hello-world
+runners:
+  One:
+    config-id: 3
+images:
+  One:
+    image: One
+    registry: One
+    auth:
+      username: Joy
+      password: '123'
+variables:
+  Name: Joy
