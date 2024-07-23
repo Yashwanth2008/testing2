@@ -44,5 +44,11 @@ images:
     auth:
       username: Joy
       password: '123'
+  Image:
+    image: TestImage
+    registry: '123'
+    auth:
+      username: Test
+      password: Test@123
 variables:
   Name: Joy
