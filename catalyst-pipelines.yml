@@ -12,6 +12,9 @@ jobs:
   One:
     steps:
       - catalyst deploy
+  Job:
+    steps:
+      - catalyst deploy
 stages:
   - name: build
     jobs:
