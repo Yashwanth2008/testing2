@@ -26,6 +26,9 @@ stages:
   - name: AA
     jobs:
       - hello-world
+  - name: Hello
+    jobs:
+      - hello-world
 runners:
   One:
     config-id: 3
