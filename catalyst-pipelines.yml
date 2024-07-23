@@ -32,6 +32,8 @@ stages:
 runners:
   One:
     config-id: 3
+  Runner:
+    config-id: 3
 images:
   One:
     image: One
